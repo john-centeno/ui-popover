@@ -18,7 +18,7 @@
         "demo.svelte.android": "cd ./demo-svelte && ns run android --no-hmr --env.watchNodeModules",
         "demo.svelte.clean": "cd ./demo-svelte && ns clean",
         "demo.svelte.ios": "cd ./demo-svelte && ns run ios --no-hmr --env.watchNodeModules",
-        "postinstall": "npm run setup",
+        "postinstall": "echo skipping postinstall",
         "publish": "npm run setup && npm run clean && npm run build.all && npm run readme && npm run doc && npm run commit_readme_doc_changes && lerna publish",
         "readme": "lerna run readme && node ./tools/readme.js",
         "setup": "npm run submodules && ts-patch install",
